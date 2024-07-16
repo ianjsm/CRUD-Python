@@ -1,5 +1,7 @@
+import sys
 import os
-import Telas as Tela
+
+import Telas
 
 while True:
     print("\nSistema de Gerenciamento da Biblioteca")
@@ -11,18 +13,18 @@ while True:
     opcao = int(input("Digite a opção desejada: "))
 
     if opcao == 1:
-        Tela.limpar_tela()
-        Tela.abrir_menu_livros()
+        Telas.limpar_tela()
+        Telas.abrir_menu_livros()
     elif opcao == 2:
-        Tela.limpar_tela()
-        Tela.abrir_menu_emprestimos()
+        Telas.limpar_tela()
+        Telas.abrir_menu_emprestimos()
     elif opcao == 3:
-        Tela.limpar_tela()
-        Tela.abrir_menu_usuarios()
+        Telas.limpar_tela()
+        Telas.abrir_menu_usuarios()
     elif opcao == 4:
-        Tela.limpar_tela()
+        Telas.limpar_tela()
         print("Encerrando o sistema...")
         break
     else:
-        Tela.limpar_tela()
+        Telas.limpar_tela()
         print("Digite uma opção válida!")
